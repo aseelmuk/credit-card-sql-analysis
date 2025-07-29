@@ -1,5 +1,4 @@
---1) 5 cities with highest spends and their percentage contribution of
---total credit card spends 
+--1) 5 cities with highest spends and their percentage contribution of total credit card spends 
 
 
 with cte as (select city,sum(amount) as total_spent 
@@ -30,8 +29,8 @@ from cte2
 where rnk=1
 
 
---3) Print the transaction details(all columns from the table) for each card type when
---it reaches a cumulative of  1,000,000 total spends(We should have 4 rows in the o/p one for each card type)
+--3) Print the transaction details(all columns from the table) for each card type when it reaches a cumulative of  1,000,000 total spends
+  
 
 with cte as (
 select *,sum(amount) over(partition by card_type order by transaction_date,transaction_id) as total_spend
@@ -52,7 +51,7 @@ where gold_amt is not null
 order by gold_percent asc
 
 
---5) Get highest and lowest expense type for each city
+--5) Highest and lowest expense type for each city
 
 with cte as (
 select city,exp_type, sum(amount) as total_amount from credit_card_transactions
@@ -67,7 +66,7 @@ from
 from cte) A
 group by city;
 
---6) Find percentage contribution of spends by females for each expense type
+--6) Percentage contribution of spends by females for each expense type
 
 select exp_type,
 sum(case when gender='F' then amount else 0 end)*1.0/sum(amount) as percentage_female_contribution
@@ -75,7 +74,7 @@ from credit_card_transactions
 group by exp_type
 order by percentage_female_contribution desc;
 
---7) which card and expense type combination saw highest month over month growth in Jan-2014
+--7) Which card and expense type combination saw highest month over month growth in Jan-2014 ?
 
 with cte as (
 select card_type,exp_type,datepart(year,transaction_date) yt
@@ -91,7 +90,7 @@ from cte) A
 where prev_mont_spend is not null and yt=2014 and mt=1
 order by mom_growth desc;
 
---8) During weekends which city has highest total spend to total no of transcations ratio 
+--8) During weekends which city has highest total spend to total no of transcations ratio ?
 
 select top 1 city , sum(amount)*1.0/count(1) as ratio
 from credit_card_transactions
@@ -99,9 +98,7 @@ where datepart(weekday,transaction_date) in (1,7)
 group by city
 order by ratio desc;
 
---9) Which city took least number of days to reach its
---500th transaction after the first transaction in that city;
-
+--9) Which city took least number of days to reach its 500th transaction after the first transaction in that city;
 
 with cte as (
 select *
