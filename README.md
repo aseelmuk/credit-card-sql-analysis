@@ -4,7 +4,7 @@
 This project involves analyzing a large dataset of credit card transactions across Indian cities using SQL. The goal is to derive meaningful business insights related to customer spending behavior, transaction patterns, and card usage. 
 
 ### Data source
-the primary dataset used for this analysis is the "Credit card transactions-India- Simple.csv" containing detailed information about credit card spending habits in India
+the primary dataset used for this analysis is the "Credit card transactions-India.csv" containing detailed information about credit card spending habits in India
 
 
 ### Exploratory data analysis (EDA)
