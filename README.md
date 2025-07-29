@@ -35,12 +35,22 @@ Amounts vary widely across card types.
 
 Cardholder gender is available, allowing for demographic segmentation.
 
+## SQL Queries
+
+All SQL queries used to derive the insights are available in [`credit_card_analysis.sql`](./credit_card_analysis.sql).
+
+### Key Questions Answered:
+1. Top 5 cities by total spend and their percentage of total spend.
+2. Highest spend month by card type.
+3. City having highest total spend to total no of transcations ratio on weekends
+
+
+
 
 ### Results/findings
 
 **Highest & Lowest Expense Types by City:**
 For each city, found which expense category received the most and least spend — helps localize marketing or partnership strategies.
-
 
 **Cumulative Spend Threshold:**
 Found the point (transaction) at which each card type hit ₹10,00,000 in cumulative spend. Useful for tracking early high-performance behavior.
@@ -48,10 +58,8 @@ Found the point (transaction) at which each card type hit ₹10,00,000 in cumula
 **Lowest Gold Card Contribution:**
 Identified the city where gold card spend was proportionally the lowest. Could indicate untapped market or user preference for other cards.
 
-
 **Female Spend Contribution by Expense Type:**
 Calculated female spending as a percentage of total for each expense type, offering insights into gender-based usage patterns.
-
 
 **Weekend Spend Efficiency:**
 Evaluated which city had the highest ratio of total weekend spend to number of weekend transactions — revealing high-value areas.
