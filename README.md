@@ -49,7 +49,7 @@ Cardholder gender is available, allowing for demographic segmentation.
 
 All SQL queries used to derive the insights are available in [sql/credit_card_queries.sql](https://github.com/aseelmuk/credit-card-sql-analysis/blob/main/credit_card_queries.sql).
 
-### Key Questions Answered:
+### Key Questions Answered
 1. Top 5 cities by total spend and their percentage of total spend.
 2. Highest spend month by card type.
 3. City having highest total spend to total no of transcations ratio on weekends
