@@ -1,7 +1,7 @@
-<h1 align="center">📊 Credit Card Transactions – India</h1>
+<h1 align="center"> Credit Card Transactions – India</h1>
 <p align="center">SQL Project | Customer Spend Analysis </p>
 
-## 📚 Table of Contents
+## Table of Contents
 
 - [Project Overview](#project-overview)
 - [Data Source](#data-source)
