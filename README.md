@@ -6,6 +6,7 @@
 - [Data Source](#data-source)
 - [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
 - [SQL Queries](#sql-queries)
+- [Key Questions Answered](#key-questions-answered)
 - [Results and Findings](#results-and-findings)
 
 
