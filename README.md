@@ -1,5 +1,14 @@
 # Credit Card Transactions-India
 
+## 📚 Table of Contents
+
+- [Project Overview](#project-overview)
+- [Data Source](#data-source)
+- [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
+- [SQL Queries](#sql-queries)
+- [Results and Findings](#results-and-findings)
+
+
 ### Project overview
 This project involves analyzing a large dataset of credit card transactions across Indian cities using SQL. The goal is to derive meaningful business insights related to customer spending behavior, transaction patterns, and card usage. 
 
@@ -47,7 +56,7 @@ All SQL queries used to derive the insights are available in [sql/credit_card_qu
 
 
 
-### Results/findings
+### Results and findings
 
 **Highest & Lowest Expense Types by City:**
 For each city, found which expense category received the most and least spend — helps localize marketing or partnership strategies.
