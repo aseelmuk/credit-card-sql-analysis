@@ -1,4 +1,5 @@
-# Credit Card Transactions-India
+<h1 align="center">📊 Credit Card Transactions – India</h1>
+<p align="center">SQL Project | Customer Spend Analysis </p>
 
 ## 📚 Table of Contents
 
