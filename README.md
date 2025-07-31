@@ -37,7 +37,7 @@ Cardholder gender is available, allowing for demographic segmentation.
 
 ## SQL Queries
 
-All SQL queries used to derive the insights are available in (sql/credit_card_queries.sql)
+All SQL queries used to derive the insights are available in sql/credit_card_queries.sql.
 
 ### Key Questions Answered:
 1. Top 5 cities by total spend and their percentage of total spend.
